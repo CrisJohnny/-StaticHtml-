@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>大头音乐网</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="js/song.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+/*
+var musics=["song/l_s/rgzjsaq.mp3","song/l_s/aj.mp3",
+			"song/l_s/dd.mp3","song/l_s/wwdxf.mp3",
+			"song/l_s/mysmbt.mp3","song/l_s/wzqad.mp3",
+			"song/l_s/rzdx.mp3","song/l_s/zf.mp3",
+			"song/l_s/cn.mp3"];
+			
+var gm=["张靓颖-如果这就是爱情","周杰伦-安静",
+		"蔡依林-倒带","陈奕迅-稳稳地幸福",
+		"曲婉婷-没有什么不同","张惠妹-我最亲爱的",
+		"薛之谦-认真的雪","那英-征服",
+		"庾澄庆-春泥"];
+*/
+		
+	window.onload = function(){
+		document.getElementById("m1").innerHTML="张杰--逆战";
+		document.getElementById("s_y").style.display="block";
+		document.getElementById("g_s").style.display="none";
+		document.getElementById("g_q").style.display="none";
+		document.getElementById("z_x").style.display="none";		
+		/*if(document.getElementById("player").play()){
+			var a=Math.round(Math.random()*9);
+			document.getElementById("player").style.src=musics[a];
+			document.getElementById("m1").innerHTML=gm[a];
+		}*/
+	}
+	
+    function showDiv(d){
+		
+		if(document.getElementById("g_q").style.display=="block"){
+			
+				document.getElementById("x_y").style.display="none";
+				document.getElementById("y_y").style.display="none";
+				document.getElementById("w_l").style.display="none";
+				document.getElementById("l_s").style.display="block";
+			 }
+			 
+		switch(d){
+			case 's_y':
+			document.getElementById("s_y").style.display="block";
+			document.getElementById("g_s").style.display="none";
+			document.getElementById("g_q").style.display="none";
+			document.getElementById("z_x").style.display="none";
+      		break;
+					    	
+    	case 'g_s':
+			document.getElementById("s_y").style.display="none";
+			document.getElementById("g_s").style.display="block";
+			document.getElementById("g_q").style.display="none";
+			document.getElementById("z_x").style.display="none";
+      		break;
+    	
+    	case 'g_q':
+			document.getElementById("s_y").style.display="none";
+			document.getElementById("g_s").style.display="none";
+			document.getElementById("g_q").style.display="block";
+			document.getElementById("z_x").style.display="none";
+     		break;
+		
+		case 'z_x':
+			document.getElementById("s_y").style.display="none";
+			document.getElementById("g_s").style.display="none";
+			document.getElementById("g_q").style.display="none";
+			document.getElementById("z_x").style.display="block";
+     		break;
+    	
+		}
+	}
+	
+	function showDiv2(d2){
+		switch(d2){
+			    	
+    	case 'n_d':
+			document.getElementById("n_d").style.display="block";
+			document.getElementById("g_t").style.display="none";
+			document.getElementById("o_m").style.display="none";
+			document.getElementById("r_h").style.display="none";
+      		break;
+    	
+    	case 'g_t':
+			document.getElementById("s_y").style.display="none";
+			document.getElementById("n_d").style.display="none";
+			document.getElementById("g_t").style.display="block";
+			document.getElementById("o_m").style.display="none";
+			document.getElementById("r_h").style.display="none";
+      		break;
+			
+		case 'o_m':
+			document.getElementById("s_y").style.display="none";
+			document.getElementById("n_d").style.display="none";
+			document.getElementById("g_t").style.display="none";
+			document.getElementById("o_m").style.display="block";
+			document.getElementById("r_h").style.display="none";
+      		break;
+    	
+		case 'r_h':
+			document.getElementById("s_y").style.display="none";
+			document.getElementById("n_d").style.display="none";
+			document.getElementById("g_t").style.display="none";					
+			document.getElementById("o_m").style.display="none";
+			document.getElementById("r_h").style.display="block";
+      		break;
+		}
+	}
+	
+		function showDiv3(d3){
+
+		switch(d3){
+			    	
+    	case 'l_s':
+			document.getElementById("l_s").style.display="block";
+			document.getElementById("x_y").style.display="none";
+			document.getElementById("w_l").style.display="none";
+			document.getElementById("y_y").style.display="none";
+      		break;
+    	
+    	case 'x_y':
+			document.getElementById("l_s").style.display="none";
+			document.getElementById("x_y").style.display="block";
+			document.getElementById("w_l").style.display="none";
+			document.getElementById("y_y").style.display="none";
+      		break;
+			
+		case 'w_l':
+			document.getElementById("l_s").style.display="none";
+			document.getElementById("x_y").style.display="none";
+			document.getElementById("w_l").style.display="block";
+			document.getElementById("y_y").style.display="none";
+      		break;
+    	
+		case 'y_y':
+			document.getElementById("l_s").style.display="none";
+			document.getElementById("x_y").style.display="none";
+			document.getElementById("w_l").style.display="none";
+			document.getElementById("y_y").style.display="block";
+      		break;
+		}
+	}
+	function showdiv(d){
+		switch(d){
+			case 'g_s_':
+			document.getElementById("g_s_").style.display="block";
+			document.getElementById("g_q_").style.display="none";
+			document.getElementById("z_x_").style.display="none";
+			break;
+			
+			case 'g_q_':
+			document.getElementById("g_s_").style.display="none";
+			document.getElementById("g_q_").style.display="block";
+			document.getElementById("z_x_").style.display="none";
+			break;
+			
+			case 'z_x_':
+			document.getElementById("g_s_").style.display="none";
+			document.getElementById("g_q_").style.display="none";
+			document.getElementById("z_x_").style.display="block";
+			break;
+		}
+	}
+
+ /*function temp(id) {
+ document.getElementById("temp").src = id;
+
+}
+  function temps(id) {
+  alert(id);
+ }*/
+</script>
+
+</head>
+<body>
+<div id="audio_1">
+	<audio id="player" controls>
+<source src="song/nz.mp3" type="audio/mp3">
+</audio>
+</div>
+
+<div class="bal" style="float:left; position:absolute; width:150px; height:20px;margin-left:40px;">
+<marquee id="m1">124</marquee>
+</div>
+<div class="d1">
+	<ul>
+    	<li><span class="sy"><a href="#" onClick="showDiv('s_y')">首页</a></span></li>
+        <li><span class="gs"><a href="#" onClick="showDiv('g_s')">歌手</a></span></li>
+        <li><span class="gq"><a href="#" onclick="showDiv('g_q')">歌曲</a></span></li>
+        <li><span class="zx"><a href="#" onclick="showDiv('z_x')">资讯</a></span></li>
+	</ul>
+</div>
+
+<div class="d1_1">
+	<div id="s_y">
+    <ul>
+    <li onMouseOver="showdiv('g_s_')" id="l1" style="background-color:#333;"><a href="#" onclick="showDiv('g_s'),showDiv2('n_d'),iframe1('if1','singer_nd.html')">歌<br>手</a>
+    <div>
+    <table id="g_s_" style="display:none;">
+    <tr>
+    <td><a href="#" onClick="showDiv('g_s'),showDiv2('n_d'),iframe1('if1','singer_nd.html')">内地歌手</a></td>
+    </tr>
+    <tr>
+    <td><a href="#" onClick="showDiv('g_s'),showDiv2('g_t'),iframe1('if1','singer_gt.html')">港台歌手</a></td>
+    </tr>
+    <tr>
+    <td><a href="#" onClick="showDiv('g_s'),showDiv2('o_m'),iframe1('if1','singer_om.html')">欧美歌手</a></td>
+    </tr>
+    <tr>
+    <td><a href="#" onClick="showDiv('g_s'),showDiv2('r_h'),iframe1('if1','singer_rh.html')">日韩歌手</a></td>
+    </tr>
+    </table>
+    </div>
+    </li>
+    <li onMouseOver="showdiv('g_q_')" id="l2" style="background-color:#666;"><a href="#" onclick="showDiv('g_q'),showDiv2('l_s')">歌<br>曲</a>
+    <div>
+    <table id="g_q_" style="display:none" >
+    <tr>
+    <td><a href="#" onClick="showDiv('g_q'),showDiv3('l_s')">疗伤歌曲</a></td>
+    </tr>
+    <tr>
+    <td><a href="#" onClick="showDiv('g_q'),showDiv3('x_y')">校园歌曲</a></td>
+    </tr>
+    <tr>
+    <td><a href="#" onClick="showDiv('g_q'),showDiv3('w_l')">网络歌曲</a></td>
+    </tr>
+    <tr>
+    <td><a href="#" onClick="showDiv('g_q'),showDiv3('y_y')">粤语歌曲</a></td>
+    </tr>
+    </table>
+    </div>
+    </li>
+    <li  onMouseOver="showdiv('z_x_')"  id="l3" style="background-color:#ccc;"><a href="#" onclick="showDiv('z_x')">资<br>讯</a>
+    <div id="z_x_" style="display:none;"></div></li>
+    </ul>
+    </div>
+
+  <div id="g_s">
+		<ul>
+	  		<li><span class="nd"><a href="#" onclick="showDiv2('n_d'),iframe1('if1','singer_nd.html')">内地歌手</a></span></li>
+	 	 	<li><span class="gt"><a href="#" onclick="showDiv2('g_t'),iframe1('if2','singer_gt.html')">港台歌手</a></span></li>
+	  		<li><span class="ox"><a href="#" onclick="showDiv2('o_m'),iframe1('if3','singer_om.html')">欧美歌手</a></span></li>
+	  		<li><span class="rh"><a href="#" onclick="showDiv2('r_h'),iframe1('if4','singer_rh.html')">日韩歌手</a></span></li>
+		</ul>
+   	<div class="d1_11">
+	  <div id="n_d">
+      	<iframe id="if1" src="singer_nd.html"  frameBorder="" width="700"  height="280" scrolling="yes"></iframe>
+      </div>
+	  <div id="g_t" style="display:none">
+      	<iframe id="if2" src="singer_gt.html"  frameBorder="" width="700"  height="280" scrolling="yes"></iframe>
+       </div>
+	  <div id="o_m" style="display:none">
+      	<iframe id="if3" src="singer_om.html"  frameBorder="" width="700"  height="280" scrolling="yes"></iframe>
+        </div>
+	  <div id="r_h" style="display:none">
+      	<iframe id="if4" src="singer_rh.html"  frameBorder="" width="700"  height="280" scrolling="yes"></iframe>
+        </div>
+   	</div>
+	</div>
+        
+   	<div id="g_q">
+    	<ul>
+        	<li><span class="ls"><a href="#" onclick="showDiv3('l_s')">疗伤歌曲</a></span></li>
+        	<li><span class="xy"><a href="#" onclick="showDiv3('x_y')">校园歌曲</a></span></li>
+        	<li><span class="wl"><a href="#" onclick="showDiv3('w_l')">网络歌曲</a></span></li>
+        	<li><span class="yy"><a href="#" onclick="showDiv3('y_y')">粤语歌曲</a></span></li>
+		</ul>
+    	<div class="d1_12">
+			<div id="l_s">
+            	<iframe src="song_ls.html"  frameBorder="" width="700"  height="280" scrolling="yes"></iframe>
+               </div>
+         	<div id="x_y" style="display:none">
+            	<iframe src="song_xy.html"  frameBorder="" width="700"  height="280" scrolling="yes"></iframe>
+            </div>
+         	<div id="w_l" style="display:none">
+            	<iframe src="song_wl.html"  frameBorder="" width="700"  height="280" scrolling="yes"></iframe>
+            </div>
+            <div id="y_y" style="display:none">
+            	<iframe src="song_yy.html"  frameBorder="" width="700"  height="280" scrolling="yes"></iframe>
+            </div>   
+    </div>
+    
+   
+    
+</div>
+<div id="z_x">
+            	<iframe id="if5" src="zx.html"  frameBorder="" width="700"  height="280" scrolling="yes"></iframe>   		
+</div>
+</body>
+</html>

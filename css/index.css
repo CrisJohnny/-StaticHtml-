@@ -1,0 +1,181 @@
+/* CSS Document */
+*{
+	margin:0 auto;
+	padding:0;
+}
+
+body{
+	width:1330px;
+	height:580px;
+	background-image:url(../images/index.gif);
+	background-color:#3c3c3c;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	font-family:"微软雅黑";
+	/*color:#3C3C3C;*/
+	font-size:large;
+}
+
+#audio_1{
+	position:absolute;
+	height:30px;
+	width:40px;
+	-webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+  */
+	-moz-transform: rotate(90deg);/*Firefox 3.5+*/
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+}
+audio{
+	position:absolute;
+	height:30px;
+	width:40px;
+}
+
+
+	
+.d1 ul{
+	padding-left:635px;
+}
+.d1 li{
+	list-style:none;
+	float:left;
+	margin-top:120px;
+	padding-left:20px;
+}
+#s_y ul{
+	padding-top:20px;
+	padding-left:60px;
+}
+#s_y li{
+	width:200px;
+	height:300px;
+	font-family:"微软雅黑";
+	font-size:50px;
+	padding-top:10px;
+	padding-left:10px;
+	background-color:white;
+	float:left;
+	list-style:none;
+	color: #f2050b;
+	animation: warning 10s infinite ease-in;
+}
+
+@keyframes warning {
+from {
+text-shadow: 0px 0px 4px #fff;
+}
+50% {
+text-shadow: 0 0 40px #fff;
+}
+to {
+text-shadow: 0 0 4px #fff;
+}
+}
+
+#l1:hover{
+	box-shadow:-5px 5px 5px black;
+	border:5px solid #FFF;
+}
+#l2:hover{
+	box-shadow:0px 5px 5px black;
+	border:5px solid #FFF;
+}
+#l3:hover{
+	box-shadow:5px 5px 5px black;
+	border:5px solid #FFF;
+}
+#s_y div{
+	width:100px;
+	height:100px;
+	padding-left:100px;
+}
+
+#g_s_{
+	font-size:20px;
+}
+#g_q_{
+	font-size:20px;
+}
+#g_q li{
+	list-style:none;
+	float:left;
+	padding-left:20px;
+
+}
+
+#g_s li{
+	list-style:none;
+	float:left;
+	margin-top:120px;
+	padding-left:20px;
+}
+
+#g_s li{
+	margin-top:20px;
+}
+.d1{
+	float:left;
+}
+.d1_1{
+	width:770px;
+	height:330px;
+	margin-top:150px;
+	margin-left:370px;
+	position:absolute;
+}
+
+.d1_11{
+	width:750px;
+	height:280px;
+	padding-top:50px;
+	padding-left:18px;
+}
+
+#g_q{
+	width: 750px;
+	height:200px;
+	top:20px;
+	left: 10px;
+	position:absolute;
+}
+
+#g_q ul{
+	position:fixed;
+	top:100px;
+	margin-top:70px;
+	margin-left:-10px;
+}
+			
+
+
+.d1_12{
+	position:absolute;
+	top:30px;
+	left:9px;
+	
+}
+
+a:link{
+	text-decoration:none;
+	color:#fff;
+}
+
+a:hover{
+	font-weight:bolder;
+	
+}
+
+a:visited{
+	color:#fff;
+}
+
+#m1{
+	color:#fff;
+}
+
+#z_x{
+	width: 900px;
+	height:200px;
+	top:50px;
+	left: 30px;
+	position:absolute;
+}

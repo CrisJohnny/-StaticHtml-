@@ -1,0 +1,127 @@
+/* CSS Document */
+
+/*内地歌手*/
+body{
+
+	font-family:"微软雅黑";
+	/*color:#3C3C3C;*/
+	font-size:large;
+SCROLLBAR-FACE-COLOR:#9E9E9E;
+SCROLLBAR-HIGHLIGHT-COLOR:#9E9E9E;
+SCROLLBAR-SHADOW-COLOR:#9E9E9E;
+SCROLLBAR-3DLIGHT-COLOR:#9E9E9E;
+SCROLLBAR-ARROW-COLOR:#9E9E9E;
+SCROLLBAR-TRACK-COLOR:#9E9E9E;
+SCROLLBAR-DARKSHADOW-COLOR:#9E9E9E;
+SCROLLBAR-BASE-COLOR:#9E9E9E;
+
+/*scrollbar-3dlight-color:color;设置或检索滚动条亮边框颜色；    
+scrollbar-highlight-color:color;设置或检索滚动条3D界面的亮边颜色；    
+scrollbar-face-color:color;设置或检索滚动条3D表面的颜色；    
+scrollbar-arrow-color:color;设置或检索滚动条方向箭头的颜色；当滚动条出现但不可用时，此属性失效；    
+scrollbar-shadow-color:color;设置或检索滚动条3D界面的暗边颜色；    
+scrollbar-darkshadow-color:color;设置或检索滚动条暗边框颜色；    
+scrollbar-base-color:color;设置或检索滚动条基准颜色。其它界面颜色将据此自动调整。    
+scrollbar-track-color:color;设置或检索滚动条的拖动区域颜色
+*/
+}
+
+::-webkit-scrollbar{width:14px; /*滚动条宽度*/ }  
+        /*滚动条按钮*/  
+        ::-webkit-scrollbar-button {  
+  
+        }  
+        ::-webkit-scrollbar-track{  
+            background-color:#9E9E9E;  /*滑道全部*/  
+        }  
+        ::-webkit-scrollbar-track-piece{  
+            background-color:#9E9E9E;  /*滑道*/  
+            -webkit-border-radius:4px; /*滑道圆角宽度*/  
+        }  
+        ::-webkit-scrollbar-thumb{  
+            background-color:#9E9E9E; /*滑动条表面*/  
+            border:solid 1px #9E9E9E; /*滑动条边框*/  
+            border-radius:4px;  /*滑动条圆角宽度*/  
+        }  
+        /*横竖滚动条交角*/  
+        ::-webkit-scrollbar-corner {  
+            background-color: #9E9E9E;  
+        }  
+        /*横竖滚动条交角图案*/  
+        ::-webkit-resizer {  
+            /*background-image: url(/public/img/resizer-inactive.png);*/  
+           background-repeat: no-repeat;  
+           background-position: bottom right;  
+       }  
+       /*鼠标滑过滑动条*/  
+        ::-webkit-scrollbar-thumb:hover{ background-color:#9E9E9E; }  
+ul{
+	width:600px;
+	height:280px;
+	float:left;
+	margin-left:30px;
+	margin-top:-20px;
+}
+
+li{
+	background-color:#FFF;
+	opacity:0.8;
+	width:120px;
+	height:240px;
+	margin-left:20px;
+	margin-top:10px;
+	float:left;
+	list-style:none;
+	border-bottom-width:10px;
+	border-top-width:10px;
+	border-style:solid;
+	border-color:#fff;
+	box-shadow:5px 5px 5px #000;
+	}
+
+.s_l{
+	width:120px;
+	background-color:#fff;
+}
+
+a:link{
+	text-decoration:none;
+	color:#333;
+}
+
+li:hover{
+	border-color:#333;
+	background-color:#333;
+	color:#FFF;
+}
+
+.z,.dd{
+	width:580px;
+	margin-left:40px;
+	padding-left:20px;
+	padding-right:20px;
+	border-right:5px solid #FFF;
+	border-left:5px solid #fff;
+}
+	
+
+table{
+	width:200px;
+	border:3px solid rgba(204,204,204,0.8);
+
+}
+
+td:hover{
+	background-color:rgba(204,204,204,0.8);
+}
+
+.dd{
+	position:fixed;
+	_position:absolute;
+	top:10px;
+	left:475px;
+	height:100px;
+	width:150px;
+	_bottom:auto;
+	_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||600)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+	}
